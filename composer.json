@@ -1,0 +1,35 @@
+{
+    "name": "firebender/laravel-widgets",
+    "description": "Laravel widgets package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jay Arabia",
+            "email": "firebender.me@gmail.com"
+        }
+    ],
+    "require": {
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "FireBender\\Laravel\\Widgets\\": "src/",
+            "FireBender\\Laravel\\Widgets\\Database\\Factories\\": "database/factories/",
+            "FireBender\\Laravel\\Widgets\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FireBender\\Laravel\\Widgets\\Tests\\": "tests/"
+        }
+    },    
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FireBender\\Laravel\\Widgets\\Providers\\PackageServiceProvider"
+            ]
+        }
+    }
+}
